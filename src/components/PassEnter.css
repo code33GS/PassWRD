@@ -1,0 +1,286 @@
+.pe-main {
+    margin-top: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vh;
+    text-align: center;
+    color: #00ff69;
+    font-size: 1.5vw;
+    font-weight: 700;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.pem-pname-save {
+    width: 50%;
+    gap: 1.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cmmn {
+    border: 2px solid #00ff69;
+    border-radius: 4vw;
+    background-color: #fff;
+    color: #000000;
+
+}
+
+.cmmn:focus {
+    background-color: #00ff69;
+    border-color: #ffffff;
+    color: #ffffff;
+    outline: none;
+}
+
+.ip-btn {
+    padding: 0.9vw 0.5vw;
+    font-size: 1vw;
+    font-weight: 700;
+    transition: all 0.2s;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    background-color: #00ff69;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.ip-btn:hover {
+    color: #ffffff;
+}
+
+.ip-btn:focus {
+    background-color: #00692c;
+}
+
+.wdth {
+    width: 50%;
+}
+
+
+
+.ip-eye {
+    position: absolute;
+}
+
+.ip-txt {
+    flex: 1;
+    padding: 1vw 2vw;
+    font-size: 1.2vw;
+    color: #000000;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 0.5vw;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.ip-txt:focus {
+    outline: none;
+}
+
+.ip-txt::placeholder {
+    color: #aaa;
+}
+
+.ip-eye {
+    padding: 0.9vw;
+    padding-left: 0.8vw;
+    font-size: 1.1vw;
+    background-color: #00ff69;
+    color: #ffffff;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00692c;
+}
+
+.passeye {
+    position: relative;
+    width: 100%;
+    padding-left: 5.5%;
+}
+
+.mid-but {
+    display: flex;
+    gap: 10px;
+}
+
+.mainkabhimain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pd-main {
+    width: 50vw;
+    padding: 1vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #00692c;
+    border-radius: 1vw;
+    gap: 1vw;
+}
+
+.mainkabhimain span {
+    color: #00ff69;
+    font-size: 1.5vw;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 2vw;
+}
+
+.pdm-trident {
+    width: 48vw;
+    height: 6.2vw;
+    border-radius: 0.8vw;
+    background-color: #00ff69;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.pdm-trident::-webkit-scrollbar {
+    display: none;
+}
+
+.pdm-cont-main {
+    display: flex;
+    justify-content: space-around;
+    width: 50vw;
+}
+
+.pdmc-btn {
+    height: 1.3vw;
+    width: 1.3vw;
+    font-size: 0.9vw;
+    border-radius: 50%;
+    box-shadow: 0px 2px 2px 1px #00000055;
+    border: none;
+    background-color: #000;
+    color: #00ff69;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pdmt-contents {
+    width: 38vw;
+    border-radius: 1vw;
+    display: flex;
+    gap: 0.5vw;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 2px 1px #00000055;
+}
+
+.pdmc-main {
+    font-weight: 700;
+    font-size: 1vw;
+}
+
+.pdmc-text {
+    font-weight: 500;
+    font-size: 1vw;
+}
+
+.notng {
+    color: #fff;
+}
+
+@media (max-width:1000px) {
+
+    .pe-main{
+        font-size: 2.5vw;
+    }
+
+    .mainkabhimain span{
+        font-size: 2.5vw;
+    }
+
+    .pem-pname-save,
+    .wdth {
+        width: 90%;
+    }
+ 
+    .notng{
+        font-size: 2vw;
+    }
+
+    .pd-main {
+        width: 90vw;
+        padding: 2vw;
+    }
+
+    .pdm-cont-main{
+        width: 88vw;
+    }
+
+    .pdmt-contents{
+        width: 75vw;
+        height: 3vw;
+    }
+
+    .pdmc-main, .pdmc-text{
+        font-size: 1.7vw;
+    }
+    .pdmc-btn {
+        height: 2.3vw;
+        width: 2.3vw;
+        font-size: 1.9vw;
+    }
+    
+    .pdm-trident {
+        width: 88vw;
+        height: 12vw;
+        padding: 1.5vw;
+    }
+}
+
+@media (max-width:500px) {
+    .ip-txt{
+        font-size: 2vw;
+    }
+    .ip-eye {
+        padding: 0.9vw;
+        padding-left: 0.8vw;
+        font-size: 2vw;
+    }
+    .ip-btn {
+        padding: 1.5vw;
+        font-size: 1.4vw;
+    }
+    .pdmt-contents{
+        height: 4vw;
+    }
+
+    .pdmc-main, .pdmc-text{
+        font-size: 1.7vw;
+    }
+    .pdmc-btn {
+        height: 3vw;
+        width: 3vw;
+        font-size: 2.6vw;
+    }
+    
+    .pdm-trident {
+        height: 17vw;
+        padding: 1.5vw;
+    }
+}
